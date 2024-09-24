@@ -1,14 +1,20 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-registration',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule,RouterOutlet,RouterModule],
   templateUrl: './registration.component.html',
   styleUrl: './registration.component.css'
 })
 export class RegistrationComponent {
+
+  email:string='yvonne@gmail.com'
+  password:string="yvonne123"
+
  student={
   fname:'',
  lname:'',

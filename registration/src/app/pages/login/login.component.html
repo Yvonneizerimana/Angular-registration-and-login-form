@@ -1,0 +1,8 @@
+<div>
+    <form #studentLoginForm="ngForm" (ngSubmit)="studentLogin()">
+       email: <input type="email" [(ngModel)]="student.email"><br>
+       password: <input type="email" [(ngModel)]="student.password"><br>
+       <button type="submit" [disabled]="studentLoginForm.invalid">Login</button>
+    </form>
+    <p>don't you have an account? please <a routerLink="/registration">Register</a><router-outlet></router-outlet></p>
+</div>
